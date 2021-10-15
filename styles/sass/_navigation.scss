@@ -1,0 +1,29 @@
+.nav-container { 
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid black;
+
+    .navigation { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            list-style: none;
+
+            .title {
+                padding-left: 0;
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: grey;
+                }
+            }
+        }        
+    }
+}
