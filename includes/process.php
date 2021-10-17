@@ -1,10 +1,13 @@
 <?php 
     include_once 'database.php';
     include_once 'product.php';
+    include_once 'category.php';
 
     $database = new Database();
+    $db = $database->getConnection();
 
-    $product = new Product();
+    $product = new Product($db);
+    $category = new Category($db);
 
     // include_once 'layout_header.php';
 
