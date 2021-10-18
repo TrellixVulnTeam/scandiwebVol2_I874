@@ -8,12 +8,13 @@
         public $price;
         public $category_id;
 
-        
+        public function __construct($db) {
+            $this->conn = $db;
+        }
         
         function create() {
-            $sql = "INSERT INTO `products`(`id`, `sku`, `name`, `price`, `category_id`) VALUES ('$this->id', '$this->sku', '$this->name', '$this->price', '$this->category_id')";
-            $this->conn = new Database();
-            $this->conn->getConnection();
+            $sql = "INSERT INTO `products`(`sku`, `name`, `price`, `category_id`) ";
+            $sql .= "VALUES ('$this->sku', '$this->name', '$this->price', '$this->category_id')";
 
             return $this->conn->query($sql);
         }

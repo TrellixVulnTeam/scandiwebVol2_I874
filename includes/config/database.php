@@ -11,7 +11,6 @@
         }
 
         public function open_db_connetction() {
-            // $this->connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
             $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->db_name);
 
             if($this->conn->connect_errno) {
@@ -38,6 +37,7 @@
             return $escaped_string;
         }
     }
-
     
+    $database = new Database();
+    $db = $database->getConnection();
 ?>

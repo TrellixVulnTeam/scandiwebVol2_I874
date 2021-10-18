@@ -29,3 +29,9 @@
   .form-container .form {
     width: 30%;
     padding: 2rem; }
+    .form-container .form div:not(:first-child) {
+      margin-top: 2rem; }
+
+
+
+      
