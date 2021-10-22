@@ -15,15 +15,6 @@
             $stmt = $this->conn->query($query);
             return $stmt;
         }
-
-        // public function readName() {
-        //     $query = "SELECT name FROM `categories` WHERE id = $this->id";
-
-        //     $stmt = $this->conn->query($query);
-        //     $row = $stmt->fetch_assoc($query);
-
-        //     $this->name = $row['name'];
-        // }
     }
 
 

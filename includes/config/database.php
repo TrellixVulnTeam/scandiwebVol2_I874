@@ -6,7 +6,7 @@
         private $pass = '';
         public $conn;
 
-        function getConnection() {
+        function setConnection() {
             $this->open_db_connetction();
         }
 
@@ -37,7 +37,4 @@
             return $escaped_string;
         }
     }
-    
-    $database = new Database();
-    $db = $database->getConnection();
 ?>
